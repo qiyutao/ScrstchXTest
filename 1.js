@@ -953,14 +953,22 @@
 
   var menus = {
     en: {
-      buttons: ['button A', 'button B', 'button C', 'button D'],
+      /*buttons: ['button A', 'button B', 'button C', 'button D'],
       btnStates: ['pressed', 'released'],
       hwIn: ['rotation knob', 'light sensor', 'temperature sensor'],
       hwOut: ['led A', 'led B', 'led C', 'led D', 'button A', 'button B', 'button C', 'button D', 'servo A', 'servo B', 'servo C', 'servo D'],
       leds: ['led A', 'led B', 'led C', 'led D'],
       outputs: ['on', 'off'],
       ops: ['>', '=', '<'],
-      servos: ['servo A', 'servo B', 'servo C', 'servo D']
+      servos: ['servo A', 'servo B', 'servo C', 'servo D']*/
+      buttons: ['按鈕 A', '按鈕 B', '按鈕 C', '按鈕 D'],
+      btnStates: ['按下', '放開'],
+      hwIn: ['旋鈕', '光感應器', '溫度感應器'],
+      hwOut: ['發光二極體 A', '發光二極體 B', '發光二極體 C', '發光二極體 D', '按鈕 A', '按鈕 B', '按鈕 C', '按鈕 D', '伺服馬達 A', '伺服馬達 B', '伺服馬達 C', '伺服馬達 D'],
+      leds: ['發光二極體 A', '發光二極體 B', '發光二極體 C', '發光二極體 D'],
+      outputs: ['開', '關'],
+      ops: ['>', '=', '<'],
+      servos: ['伺服馬達 A', '伺服馬達 B', '伺服馬達 C', '伺服馬達 D']
     },
     de: {
       buttons: ['Taste A', 'Taste B', 'Taste C', 'Taste D'],
