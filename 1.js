@@ -544,7 +544,7 @@
 
   var blocks = {
     en: [
-      ['h', 'when device is connected', 'whenConnected'],
+      /*['h', 'when device is connected', 'whenConnected'],
       [' ', 'connect %m.hwOut to pin %n', 'connectHW', 'led A', 3],
       [' ', 'connect %m.hwIn to analog %n', 'connectHW', 'rotation knob', 0],
       ['-'],
@@ -570,7 +570,34 @@
       ['h', 'when analog %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
       ['r', 'read analog %n', 'analogRead', 0],
       ['-'],
-      ['r', 'map %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240]
+      ['r', 'map %n from %n %n to %n %n', 'mapValues', 50, 0, 100, -240, 240]*/
+      ['h', '當裝置連接時', 'whenConnected'],
+      [' ', '連接 %m.hwOut 到腳位 %n', 'connectHW', '發光二極體 A', 3],
+      [' ', '連接 %m.hwIn 到類比 %n', 'connectHW', '旋鈕', 0],
+      ['-'],
+      [' ', '設定 %m.leds %m.outputs', 'digitalLED', '發光二極體 A', 'on'],
+      [' ', '設定 %m.leds 亮度為 %n%', 'setLED', '發光二極體 A', 100],
+      [' ', '改變 %m.leds 亮度 %n%', 'changeLED', '發光二極體 A', 20],
+      ['-'],
+      [' ', '旋轉 %m.servos 到 %n 度', 'rotateServo', '伺服馬達 A', 180],
+      [' ', '旋轉 %m.servos %n 度', 'changeServo', '伺服馬達 A', 20],
+      ['-'],
+      ['h', '當 %m.buttons 為 %m.btnStates', 'whenButton', '按鈕 A', '按下'],
+      ['b', '%m.buttons 按下?', 'isButtonPressed', '按鈕 A'],
+      ['-'],
+      ['h', '當 %m.hwIn %m.ops %n%', 'whenInput', '旋鈕', '>', 50],
+      ['r', '讀取 %m.hwIn', 'readInput', '旋鈕'],
+      ['-'],
+      [' ', '設定腳位 %n %m.outputs', 'digitalWrite', 1, '開'],
+      [' ', '設定腳位 %n 為 %n%', 'analogWrite', 3, 100],
+      ['-'],
+      ['h', '當腳位 %n 為 %m.outputs', 'whenDigitalRead', 1, '開'],
+      ['b', '腳位 %n 開?', 'digitalRead', 1],
+      ['-'],
+      ['h', '當類比 %n %m.ops %n%', 'whenAnalogRead', 1, '>', 50],
+      ['r', '讀取類比 %n', 'analogRead', 0],
+      ['-'],
+      ['r', '對應 %n 由 %n %n 為 %n %n', 'mapValues', 50, 0, 100, -240, 240]
     ],
     de: [
       ['h', 'Wenn Arduino verbunden ist', 'whenConnected'],
